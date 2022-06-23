@@ -113,7 +113,6 @@ color: var(--accent-color);
 margin: 0 auto;
 padding-top: 200px;
 padding-bottom: 200px;
-width: 1600px;
 height: 600px;
 background-color: var(--background-secondary-color);
 text-align: center;
@@ -201,7 +200,8 @@ padding-top: 94px;
 padding-bottom: 94px;
 }
 
-.work > .section {
+.work  {
+padding-top: 0;
 padding-bottom: 94px;
 }
 
@@ -247,7 +247,6 @@ text-align: center;
 /* Footer */
 
 .footer {
-width: 1600px;
 height: 252px;
 padding-top: 60px;
 padding-bottom: 60px;
@@ -291,9 +290,9 @@ letter-spacing: 0.03em;
 text-decoration: none;
 }
 
-.footer-address,
+.footer-list,
 .footer-mail {
-padding-bottom: 9px;
+margin-bottom: 9px;
 }
 
 .address a:hover,
@@ -305,15 +304,14 @@ color: var(--accent-color);
 
 /* Портфолио */
 
-.portfolio-hidden {
-display: none;
-}
-
 .portfolio-container {
 padding-top: 94px;
 padding-bottom: 94px;
 }
 
+.portfolio-hidden {
+display: none;
+}
 .portfolio-filter {
 display: flex;
 justify-content: center;
@@ -345,6 +343,8 @@ color: var(--background-color);
 background-color: var(--accent-color);
 }
 
+/* Портфолио проекты*/
+
 .portfolio-project {
 display: flex;
 flex-wrap: wrap;
@@ -352,12 +352,15 @@ gap: 30px;
 }
 
 .portfolio-card {
-border-bottom: 1px solid #EEEEEE;
-/* flex-basis: calc((100%-60px)/3); */
+}
+
+.portfolio-text {
+padding: 20px 24px;
+border: 1px solid #EEEEEE;
+border-top: none;
 }
 
 .project-name {
-margin: 20px 24px 4px;
 font-weight: 700;
 font-size: 18px;
 line-height: 2;
@@ -365,7 +368,6 @@ letter-spacing: 0.06em;
 }
 
 .project-type {
-margin-left: 24px;
 color: var(--primary-text-color);
 font-size: 16px;
 line-height: 1.88;
