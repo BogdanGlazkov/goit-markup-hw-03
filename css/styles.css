@@ -11,17 +11,14 @@ background-color: var(--background-color);
 color: var(--title-text-color);
 font-family: Roboto, sans-serif;
 letter-spacing: 0.03em;
-
-width: 1200px;
-padding-left: 215px;
-padding-right: 215px;
 }
 
 /* Base styles */
 
 .container {
-margin: 0;
-padding: 0;
+margin: 0 auto;
+padding-left: 15px;
+padding-right: 15px;
 width: 1200px;
 /* outline: 1px solid red; */
 }
@@ -39,13 +36,13 @@ margin: 0;
 /* Header */
 
 .header {
+border-bottom: 1px solid #ECECEC;
 }
 
 .header-container {
 display: flex;
 align-items: center;
 height: 80px;
-border-bottom: 1px solid #ECECEC;
 }
 
 .logo {
@@ -114,6 +111,8 @@ color: var(--accent-color);
 
 .hero {
 margin: 0 auto;
+padding-top: 200px;
+padding-bottom: 200px;
 width: 1600px;
 height: 600px;
 background-color: var(--background-secondary-color);
@@ -174,6 +173,10 @@ gap: 30px;
 display: none;
 }
 
+.features-item {
+width: 270px;
+}
+
 .features-title {
 margin-top: 0;
 margin-bottom: 10px;
@@ -194,8 +197,8 @@ line-height: 1.71;
 /* Секции */
 
 .section {
-padding-top: 47px;
-padding-bottom: 47px;
+padding-top: 94px;
+padding-bottom: 94px;
 }
 
 .work > .section {
@@ -220,8 +223,12 @@ text-align: center;
 display: block;
 }
 
+.team-text {
+padding-top: 30px;
+padding-bottom: 30px;
+}
+
 .team-name {
-margin-top: 30px;
 margin-bottom: 10px;
 color: var(--title-text-color);
 font-weight: 500;
@@ -240,12 +247,12 @@ text-align: center;
 /* Footer */
 
 .footer {
-background-color: var(--background-secondary-color);
-position: absolute;
 width: 1600px;
 height: 252px;
 padding-top: 60px;
 padding-bottom: 60px;
+margin: 0 auto;
+background-color: var(--background-secondary-color);
 }
 
 .footer-logo {
@@ -284,6 +291,11 @@ letter-spacing: 0.03em;
 text-decoration: none;
 }
 
+.footer-address,
+.footer-mail {
+padding-bottom: 9px;
+}
+
 .address a:hover,
 .address a:focus {
 color: var(--accent-color);
@@ -297,8 +309,9 @@ color: var(--accent-color);
 display: none;
 }
 
-.portfolio .container {
-padding: 94px 215px;
+.portfolio-container {
+padding-top: 94px;
+padding-bottom: 94px;
 }
 
 .portfolio-filter {
@@ -306,10 +319,13 @@ display: flex;
 justify-content: center;
 align-items: flex-start;
 gap: 8px;
+margin-bottom: 50px;
 }
 
 .portfolio-filter button {
+padding: 6px 22px;
 height: 38px;
+
 background-color: transparent;
 color: var(--title-text-color);
 border: none;
